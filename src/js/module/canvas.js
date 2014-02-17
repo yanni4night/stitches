@@ -227,7 +227,8 @@ function($, util, array, layoutManager, Sprite) {
             var sprite = new Sprite({
                 name: name,
                 src: src,
-                padding: this.settings.padding
+                padding: this.settings.padding,
+                submultiple: this.settings.submultiple
             }, {
                 onload: function (sprite) {
                     self.add(sprite);

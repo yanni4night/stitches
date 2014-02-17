@@ -22,7 +22,8 @@ function($, util, templates) {
     var defaults = {
         name: "", // no special chars, no spaces
         src: "", // image src (usually from a FileReader)
-        padding: 0 // defined in stitches settings
+        padding: 0 ,// defined in stitches settings
+        submultiple: 0//
     };
 
     /**
@@ -40,6 +41,7 @@ function($, util, templates) {
         this.name = this.cleanName(this.settings.name);
         this.src = this.settings.src;
         this.padding = parseInt(this.settings.padding, 10);
+        this.submultiple = parseInt(this.settings.submultiple, 10);
         this.active = false;
         this.placed = false;
 
@@ -187,7 +189,9 @@ function($, util, templates) {
                 this.width = this.image.width + this.padding * 2;
                 this.height = this.image.height + this.padding * 2;
                 this.area = this.width * this.height;
-            }
+            }else if(properties.submultiple){
+                this.submultiple = parseInt(properties.submultiple, 10);
+             }
         },
 
         /**
@@ -215,7 +219,6 @@ function($, util, templates) {
          */
         left: function (isPx) {
             var left = this.x + this.padding;
-
             // left style position is always negative
             return isPx ? util.toPx(-left) : left;
         },
@@ -229,7 +232,6 @@ function($, util, templates) {
          */
         top: function (isPx) {
             var top = this.y + this.padding;
-
             // top style postion is always negative
             return isPx ? util.toPx(-top) : top;
         },

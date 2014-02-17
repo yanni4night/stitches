@@ -182,7 +182,8 @@ function($, Modernizr, store, util, templates, fileManager, layoutManager, style
         setCanvas: function () {
             this.canvas = new Canvas(this.$canvas, {
                 images: this.images,
-                padding: this.settings.padding
+                padding: this.settings.padding,
+                submultiple: this.settings.submultiple
             }, {
                 onprogress: $.proxy(this.updateProgress, this)
             });
@@ -323,6 +324,22 @@ function($, Modernizr, store, util, templates, fileManager, layoutManager, style
                             $.map(self.canvas.sprites, function (sprite) {
                                 sprite.configure({
                                     padding: value
+                                });
+                            });
+
+                            self.updateSettings();
+                        }
+                    },
+                    submultiple:{
+                        "input blur":function(e){
+                            var value = $(e.currentTarget).val();
+
+                            this.source.submultiple = value;
+                            self.canvas.submultiple = value;
+
+                            $.map(self.canvas.sprites, function (sprite) {
+                                sprite.configure({
+                                    submultiple: value
                                 });
                             });
 
@@ -508,6 +525,7 @@ function($, Modernizr, store, util, templates, fileManager, layoutManager, style
                     stylesheet: this.settings.stylesheet,
                     prefix: this.settings.prefix,
                     padding: this.settings.padding,
+                    submultiple: this.settings.submultiple,
                     uri: this.settings.uri
                 }
             });

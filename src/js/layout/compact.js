@@ -88,7 +88,13 @@ function ($, util, BaseLayout) {
                 for (y = 0; y <= (dimensions.height - sprite.height); y++) {
                     for (x = 0; x <= (dimensions.width - sprite.width); x++) {
                         sprite.x = x;
+                        if (sprite.submultiple && (sprite.x + sprite.padding) % sprite.submultiple) {
+                            sprite.x = (Math.floor((sprite.x + sprite.padding) / sprite.submultiple) + 1) * sprite.submultiple - sprite.padding;
+                        }
                         sprite.y = y;
+                        if (sprite.submultiple && (sprite.y + sprite.padding) % sprite.submultiple) {
+                            sprite.y = (Math.floor((sprite.y + sprite.padding) / sprite.submultiple) + 1) * sprite.submultiple - sprite.padding;
+                        }
 
                         intersection = this.intersection(sprite, placed);
 
