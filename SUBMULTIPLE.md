@@ -11,4 +11,4 @@ Submultiple
 
 为尽最大精确度操作，最好xy坐标都是偶数，图片本身的大小则需要由开发者自己保证。
 
-本repo修改自<https://github.com/draeton/stitches>，实现了xy坐标对*submultiple*的整除。
+本repo修改自<https://github.com/draeton/stitches>，实现了xy坐标，图片大小对*submultiple*的整除。

@@ -734,7 +734,8 @@ function($, Modernizr, store, util, templates, fileManager, layoutManager, style
         generateSheets: function (e) {
             this.spritesheet = layoutManager.getSpritesheet({
                 sprites: this.canvas.sprites,
-                dimensions: this.canvas.dimensions
+                dimensions: this.canvas.dimensions,
+                submultiple:this.settings.submultiple
             });
 
             this.stylesheetWithUri = stylesheetManager.getStylesheet({

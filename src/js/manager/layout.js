@@ -115,6 +115,14 @@ function ($, CompactLayout, VerticalLayout, HorizontalLayout) {
             var context;
             var spritesheet;
 
+            if(options.submultiple&&dimensions.width/options.submultiple){
+                dimensions.width=(1+Math.floor(dimensions.width/options.submultiple))*options.submultiple;
+            }
+
+            if(options.submultiple&&dimensions.height/options.submultiple){
+                dimensions.height=(1+Math.floor(dimensions.height/options.submultiple))*options.submultiple;
+            }
+
             canvas = document.createElement("canvas");
             canvas.width = dimensions.width;
             canvas.height = dimensions.height;
