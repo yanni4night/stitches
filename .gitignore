@@ -5,3 +5,4 @@ node_modules/
 stitches/
 !build/stitches/
 tmp/
+npm-debug.log
