@@ -13,9 +13,10 @@ define([
     "wrap/jquery",
     "layout/compact",
     "layout/vertical",
-    "layout/horizontal"
+    "layout/horizontal",
+    "util/util"
 ],
-function ($, CompactLayout, VerticalLayout, HorizontalLayout) {
+function ($, CompactLayout, VerticalLayout, HorizontalLayout, util) {
 
     "use strict";
 
@@ -115,13 +116,8 @@ function ($, CompactLayout, VerticalLayout, HorizontalLayout) {
             var context;
             var spritesheet;
 
-            if(options.submultiple&&dimensions.width/options.submultiple){
-                dimensions.width=(1+Math.floor(dimensions.width/options.submultiple))*options.submultiple;
-            }
-
-            if(options.submultiple&&dimensions.height/options.submultiple){
-                dimensions.height=(1+Math.floor(dimensions.height/options.submultiple))*options.submultiple;
-            }
+            dimensions.width=util.exactDivision(dimensions.width,options.submultiple);
+            dimensions.height=util.exactDivision(dimensions.height,options.submultiple);
 
             canvas = document.createElement("canvas");
             canvas.width = dimensions.width;

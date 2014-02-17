@@ -9,6 +9,10 @@ Submultiple
 
 来实现，响应地，sprite的长宽以及xy坐标都需要缩小50%。
 
-为尽最大精确度操作，最好xy坐标都是偶数，图片本身的大小则需要由开发者自己保证。
+因此为尽最大精确度操作，最好xy坐标都是偶数，合并后的图片长宽也是偶数，sprite本身的大小则需要由开发者自己保证。
 
-本repo修改自<https://github.com/draeton/stitches>，实现了xy坐标，图片大小对*submultiple*的整除。
+本repo修改自<https://github.com/draeton/stitches>，实现了sprite的xy坐标，合并后图片大小对*submultiple*的整除。
+
+Contact
+======
+- <yanni4night@gmail.com>

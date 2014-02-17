@@ -97,6 +97,25 @@ function ($) {
          */
         toPx: function (num) {
             return num ? num + "px" : "0";
+        },
+
+        /**
+         * ### @exactDivision
+         * Increase a number to exact division for divisor.
+         *
+         * @param {number} dividend
+         * @param {number} divisor
+         * @return number
+         */
+        exactDivision: function(num,submultiple){
+            num |=0;
+            submultiple |=0;
+            if(submultiple<=0 || 0===num)
+            {
+                return num;
+            }
+
+            return ( 1 + Math.floor( num / submultiple ) ) * submultiple;
         }
     };
 
