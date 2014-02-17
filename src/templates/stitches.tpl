@@ -119,6 +119,16 @@
                                 </div>
 
                                 <div class="control-group">
+                                    <label class="control-label">Submultiple</label>
+                                    <div class="controls">
+                                        <div class="input-append">
+                                            <input name="submultiple" type="number" min="0" required placeholder="Sprite submultiple&hellip;" value="0"/>
+                                            <span class="add-on">px</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="control-group">
                                     <label class="control-label">Data URI</label>
                                     <div class="controls">
                                         <label class="checkbox">
