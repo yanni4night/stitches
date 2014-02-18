@@ -215,13 +215,13 @@
                 </div>
 
                 <div class="stitches-palette-body">
-                    <p><a href="http://draeton.github.io/stitches/">Stitches<a/> is an HTML5 <a href="http://en.wikipedia.org/wiki/Sprite_(computer_graphics)#Sprites_by_CSS">sprite sheet</a> generator.</p>
+                    <p><a href="https://github.com/yanni4night/stitches">Stitches<a/> is an HTML5 <a href="http://en.wikipedia.org/wiki/Sprite_(computer_graphics)#Sprites_by_CSS">sprite sheet</a> generator.</p>
 
                     <p>Drag &amp; drop image files onto the space below, or use the &ldquo;Open&rdquo; link to load images using the file browser. Then, click &ldquo;Generate&rdquo; to create a sprite sheet and stylesheet. <em>This demo uses a couple of HTML5 APIs, and it is only currently compatible with WebKit and Firefox browsers.</em></p>
 
-                    <p>Stitches is developed by <a href="http://draeton.github.io">Matthew Cobbs</a> in concert with the lovely open-source community at <a href="http://github.io">Github</a>. Thanks are owed to the developers at Twitter for <a href="http://twitter.github.io/bootstrap">Bootstrap</a>, and <a href="http://glyphicons.com/">Glyphicons</a> for some cool little icons.</p>
+                    <p>Stitches is developed by <a href="http://draeton.github.io">Matthew Cobbs</a> in concert with the lovely open-source community at <a href="http://github.io">Github</a>, and modified by <a href="https://github.com/yanni4night">Yanni Nightingale</a> for special x&amp;y coordinates. Thanks are owed to the developers at Twitter for <a href="http://twitter.github.io/bootstrap">Bootstrap</a>, and <a href="http://glyphicons.com/">Glyphicons</a> for some cool little icons.</p>
 
-                    <p class="text-right"><small>Copyright &copy; 2013 Matthew Cobbs<br/>
+                    <p class="text-right"><small>Copyright &copy; 2013 Matthew Cobbs &amp; &copy; 2014 Yanni Nightingale<br/>
                         Licensed under the MIT license.</small></p>
                 </div>
 
