@@ -6,3 +6,5 @@ stitches/
 !build/stitches/
 tmp/
 npm-debug.log
+*DS_Store
+._*
