@@ -189,7 +189,7 @@ module.exports = function(grunt) {
                 branch: "<%= pkg.baseBranch %>"
             },
             pages: {
-                branch: "gh-pages"
+                branch: "master"
             }
         },
 
@@ -198,7 +198,7 @@ module.exports = function(grunt) {
                 branch: "<%= pkg.baseBranch %>"
             },
             pages: {
-                branch: "gh-pages"
+                branch: "master"
             }
         }
     });

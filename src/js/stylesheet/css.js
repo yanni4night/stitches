@@ -52,7 +52,8 @@ function ($, util, templates, BaseStylesheet) {
             return templates.css({
                 prefix: prefix,
                 backgroundImage: backgroundImage,
-                sprites: sprites
+                sprites: sprites,
+                util: util
             });
         }
     });

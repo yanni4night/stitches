@@ -107,15 +107,31 @@ function ($) {
          * @param {number} divisor
          * @return number
          */
-        exactDivision: function(num,submultiple){
-            num |=0;
-            submultiple |=0;
-            if(submultiple<=0 || 0===num)
+        exactDivision: function(num, submultiple){
+            num |= 0;
+            submultiple |= 0;
+            if(submultiple <= 0 || 0 === num)
             {
                 return num;
             }
 
             return ( 1 + Math.floor( num / submultiple ) ) * submultiple;
+        },
+        /**
+         * ### @doDivision
+         * @param  {number} num
+         * @param  {number} submultiple
+         * @return {number}
+         */
+        doDivision: function(num, submultiple){
+            num |= 0;
+            submultiple |= 0;
+            if(submultiple <= 0 || 0 === num)
+            {
+                return num;
+            }
+
+            return Math.round( num / submultiple ) | 0;
         }
     };
 

@@ -7,8 +7,8 @@
 <% $.map(sprites, function (sprite) { %>
 \n
 .<%= prefix %>-<%= sprite.name %> {\n
-    width: <%= sprite.image.width %>px;\n
-    height: <%= sprite.image.height %>px;\n
-    background-position: <%= sprite.left(true) %> <%= sprite.top(true) %>;\n
+    width: <%= util.doDivision(sprite.image.width, sprite.submultiple) %>px;\n
+    height: <%= util.doDivision(sprite.image.height, sprite.submultiple) %>px;\n
+    background-position: -<%= util.doDivision(sprite.left(), sprite.submultiple) %>px -<%= util.doDivision(sprite.top(), sprite.submultiple) %>px;\n
 }\n
 <% }); %>

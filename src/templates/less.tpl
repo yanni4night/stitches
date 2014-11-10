@@ -11,7 +11,7 @@
 <% $.map(sprites, function (sprite) { %>
 \n
     &.<%= prefix %>-<%= sprite.name %> {\n
-        .stitches-<%= prefix %>(<%= sprite.left(true) %>, <%= sprite.top(true) %>, <%= sprite.image.width %>px, <%= sprite.image.height %>px);\n
+        .stitches-<%= prefix %>(-<%= util.doDivision(sprite.left(), sprite.submultiple) %>px, -<%= util.doDivision(sprite.top(), sprite.submultiple) %>px, <%= util.doDivision(sprite.image.width, sprite.submultiple) %>px, <%= util.doDivision(sprite.image.height, sprite.submultiple) %>px);\n
     }\n
 <% }); %>
 }\n
