@@ -18,6 +18,6 @@
     <div class="tab-pane stitches-example" id="example">
         <style type="text/<%= stylesheetType %>"><%= stylesheetWithUri %></style>
         <div><%= markupTooltip %></div>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/1.3.3/less.min.js"></script>
+        <script src="http://lib.sinaapp.com/js/lesscss/1.3.3/less-1.3.3.min.js"></script>
     </div>
 </div>
