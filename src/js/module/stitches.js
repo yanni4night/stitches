@@ -742,6 +742,7 @@ function($, Modernizr, store, util, templates, fileManager, layoutManager, style
                 sprites: this.canvas.sprites,
                 spritesheet: this.spritesheet,
                 prefix: this.settings.prefix,
+                dimensions: this.canvas.dimensions,
                 uri: true
             });
 
@@ -765,6 +766,7 @@ function($, Modernizr, store, util, templates, fileManager, layoutManager, style
                 this.stylesheet = stylesheetManager.getStylesheet({
                     sprites: this.canvas.sprites,
                     spritesheet: this.spritesheet,
+                    dimensions: this.canvas.dimensions,
                     prefix: this.settings.prefix,
                     uri: this.settings.uri
                 });

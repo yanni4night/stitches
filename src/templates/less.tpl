@@ -7,6 +7,7 @@
 .<%= prefix %> {\n
     background-image: url(<%= backgroundImage %>);
     background-repeat: no-repeat;\n
+    background-size: <%=util.doDivision(dimensions.width, submultiple)%>px auto;\n
     display: block;\n
 <% $.map(sprites, function (sprite) { %>
 \n

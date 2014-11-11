@@ -1,6 +1,7 @@
 .<%= prefix %> {\n
     background-image: url(<%= backgroundImage %>);\n
     background-repeat: no-repeat;\n
+    background-size: <%=util.doDivision(dimensions.width, submultiple)%>px auto;\n
     display: block;\n
 }\n
 

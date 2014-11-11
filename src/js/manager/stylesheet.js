@@ -54,8 +54,9 @@ function ($, CssStylesheet, LessStylesheet) {
             var spritesheet = options.spritesheet;
             var prefix = options.prefix;
             var uri = options.uri;
+            var dimensions = options.dimensions;
 
-            var styles = this.manager.get(sprites, spritesheet, prefix, uri);
+            var styles = this.manager.get(sprites, spritesheet, prefix, uri, dimensions);
             styles = styles.replace(/\\n/g, "\n");
 
             return styles;
